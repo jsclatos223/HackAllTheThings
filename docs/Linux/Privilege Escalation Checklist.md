@@ -50,14 +50,14 @@ for i in $(grep -oP "('.*?')" -R --no-filename .); do x=$(echo -n $i | ent | gre
 	ls -la --time-style=full
 	```
 - Lots of packages don't recored the milisecond or last part of time stamp. If u interact with it that part isn't zereod out. 
-- Check for [[Linux/Miscellaneous#Linux Directories]] modified by user whom are supposed to be managed by package manager
+- Check for [[Miscellaneous#Linux Directories]] modified by user whom are supposed to be managed by package manager
 #### Automated
 ```bash
 #!/bin/bash
 paths=$(echo $PATH | sed 's/:/ /g')
 for i in $paths; do ls -la --time-style=full $i | grep -v '\-\>\|00000' 2>/dev/null ; done
 ```
-### Check out Config files in their [[Linux/Miscellaneous#Config Files Default Locations| Default Locations]]
+### Check out Config files in their [[Miscellaneous#Config Files Default Locations| Default Locations]]
 ***
 ## Docker
 - Check `ls -la  /` to see if there is any `docker.env` file
